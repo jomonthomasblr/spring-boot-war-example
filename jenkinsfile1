@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+           label testnode
+       }
      tools {
         maven 'maven3' 
         }
